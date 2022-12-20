@@ -1,0 +1,17 @@
+*
+{
+  box-sizing: border-box;
+}
+body
+{
+  font-family: $font-family;
+  font-size: $font-s-home;
+  background-color: $background-dark;
+  color: $color-dark;
+}
+
+body.light
+{
+  background-color: $background-light;
+  color: $color-light;
+}
