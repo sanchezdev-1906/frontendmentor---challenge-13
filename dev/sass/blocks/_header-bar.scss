@@ -1,0 +1,29 @@
+.header-bar
+{
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+  min-height: 75px;
+
+  background-color: inherit;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.main-title
+{
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .header-bar
+  {
+    padding: 1rem 3rem;
+  }
+  .main-title
+  {
+    font-size: 2rem;
+  }
+}
