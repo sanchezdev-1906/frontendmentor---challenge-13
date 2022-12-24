@@ -18,6 +18,21 @@ body
       i.fa-regular.fa-moon
       span Dark Mode
 
+  div.details-screen#details-screen
+    button.back Back
+    div#country.country
+      div.country__flag
+      div.country__data
+
   main.home#home-screen
-    div.details
+    form()#search-form
+      button(type="submit") 
+        i.fa-regular.fa-search
+      input#search-input(type="search", name="search-country", placeholder="Search for a country...")
+    form()#filter-form
+      select#filter-input(name="filter-region") 
+        option(value="placeholder") Filter by Region
+        option(value="africa") Africa
+    div.cards-container#cards-container
+
   script(src="main.js")
