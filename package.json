@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass dev/sass/style.scss > docs/style.css | minify docs/style.css > docs/style.min.css | pug dev/index.pug -o docs/"
+    "minify": "minify docs/style.css > docs/style.min.css",
+    "sass": "sass --watch dev/sass/style.scss docs/style.css",
+    "pug": "pug --watch dev/index.pug -o docs/"
   },
   "author": "Joel Sanchez",
   "license": "ISC"
